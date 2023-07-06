@@ -1,2 +1,5 @@
 # JavaFX-Food-Delivery
-In acest readMe se afla diagramele structurale ale aplicatiei precum si imagini din aceasta
+In acest readMe se afla diagramele structurale ale aplicatiei precum si imagini din aplicatie
+
+## Diagrame Structurare
+## Imagini
