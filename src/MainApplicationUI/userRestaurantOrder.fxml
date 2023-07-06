@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainApplicationUI.UserRestaurantOrder">
+    <bottom>
+
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane layoutX="277.0" layoutY="111.0" prefHeight="106.0" prefWidth="290.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToHistory" prefHeight="108.0" prefWidth="277.0" stylesheets="@Images/menu.css" text="COMENZI" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <FontAwesomeIcon fill="#fffdfd" glyphName="BOOK" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                    </children>
+                </Pane>
+                <Pane layoutX="567.0" layoutY="111.0" prefHeight="106.0" prefWidth="283.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="108.0" prefWidth="283.0" stylesheets="@Images/menu.css" text="PROFILE" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <FontAwesomeIcon fill="#fffdfd" glyphName="USER" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                    </children>
+                </Pane>
+                <Pane layoutY="111.0" prefHeight="106.0" prefWidth="283.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToOrder" prefHeight="108.0" prefWidth="277.0" stylesheets="@Images/menu.css" text="ORDER" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </Button>
+                        <FontAwesomeIcon fill="#fffdfd" glyphName="HOME" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </bottom>
+    <top>
+        <AnchorPane fx:id="spaceShowItemsPane" prefHeight="621.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fitHeight="187.0" fitWidth="850.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/Screenshot_30.png" />
+               </image>
+            </ImageView>
+                <Pane layoutY="187.0" prefHeight="96.0" prefWidth="850.0" style="-fx-background-color: #D3D3D3;">
+                    <children>
+                        <ImageView fitHeight="96.0" fitWidth="187.0">
+                            <image>
+                                <Image url="@Images/login.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="222.0" layoutY="16.0" text="Twister Picant">
+                            <font>
+                                <Font name="Sylfaen" size="25.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="222.0" layoutY="49.0" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+                        <Label layoutX="505.0" layoutY="31.0" text="17.0">
+                            <font>
+                                <Font name="Sylfaen" size="28.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="677.0" layoutY="29.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="94.0" stylesheets="@Images/order.css" text="Button" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="781.0" layoutY="40.0" text="(3)" />
+                  <Label layoutX="222.0" layoutY="60.0" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+                    </children>
+                </Pane>
+                <Button layoutX="331.0" layoutY="580.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#goToCheckout" prefHeight="30.0" prefWidth="168.0" stylesheets="@Images/buttonStyle.css" text="Go to checkout" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            <Label alignment="TOP_CENTER" layoutX="174.0" layoutY="42.0" prefHeight="58.0" prefWidth="484.0" stylesheets="@Images/textStyle.css" text="Kentuchy" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="287.0" layoutY="94.0" stylesheets="@Images/textStyle.css" text="Str Grigoe Cantacuzino 155" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="385.0" layoutY="124.0" mnemonicParsing="false" stylesheets="@Images/buttonStyle.css" text="Reviews" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

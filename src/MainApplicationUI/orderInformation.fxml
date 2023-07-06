@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainApplicationUI.orderInformationController">
+   <top>
+      <AnchorPane fx:id="informationPane" prefHeight="621.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="restaurantLogo" fitHeight="297.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/BucurestiPopeyes.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="92.0" layoutY="422.0" text="Delivered by:">
+               <font>
+                  <Font name="Sylfaen" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="498.0" text="Delivery Adress:">
+               <font>
+                  <Font name="Sylfaen" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="333.0" text="Placed" textFill="WHITE" />
+            <Pane layoutX="297.0" layoutY="-1.0" prefHeight="298.0" prefWidth="553.0" style="-fx-background-color: #D3D3D3;">
+               <children>
+                  <Label fx:id="itemsShow" layoutX="47.0" layoutY="39.0" text="Crispy menu">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priceShow" layoutX="277.0" layoutY="39.0" prefWidth="85.0" text="Label">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="199.0" layoutY="247.0" scaleX="1.5" startX="-100.0" />
+                  <Label layoutX="47.0" layoutY="218.0" text="Delivery Fee">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="228.0">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="277.0" layoutY="218.0" text="5.00 ron">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="258.0" text="Total:">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalTextShow" layoutX="277.0" layoutY="258.0" text="100.99 ron">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="voucherTextShow" layoutX="47.0" layoutY="199.0" text="Voucher" visible="false">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="voucherSumShow" layoutX="277.0" layoutY="199.0" text="5.00 ron" visible="false">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </top>
+   <bottom>
+       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <children>
+               <Pane layoutX="277.0" layoutY="111.0" prefHeight="106.0" prefWidth="290.0" style="-fx-background-color: #000000;">
+                   <children>
+                       <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToHistory" prefHeight="108.0" prefWidth="277.0" stylesheets="@Images/menu.css" text="COMENZI" textFill="WHITE">
+                           <font>
+                               <Font size="25.0" />
+                           </font>
+                       </Button>
+                       <FontAwesomeIcon fill="#fffdfd" glyphName="BOOK" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                   </children>
+               </Pane>
+               <Pane layoutX="567.0" layoutY="111.0" prefHeight="106.0" prefWidth="283.0" style="-fx-background-color: #000000;">
+                   <children>
+                       <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="108.0" prefWidth="283.0" stylesheets="@Images/menu.css" text="PROFILE" textFill="WHITE">
+                           <font>
+                               <Font size="25.0" />
+                           </font>
+                       </Button>
+                       <FontAwesomeIcon fill="#fffdfd" glyphName="USER" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                   </children>
+               </Pane>
+               <Pane layoutY="111.0" prefHeight="106.0" prefWidth="283.0" style="-fx-background-color: #000000;">
+                   <children>
+                       <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToOrder" prefHeight="108.0" prefWidth="277.0" stylesheets="@Images/menu.css" text="ORDER" textFill="WHITE">
+                           <font>
+                               <Font size="25.0" />
+                           </font>
+                       </Button>
+                       <FontAwesomeIcon fill="#fffdfd" glyphName="HOME" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                   </children>
+               </Pane>
+           </children>
+       </AnchorPane>
+   </bottom>
+</BorderPane>

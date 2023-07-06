@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainApplicationUI.rateOrderController">
+   <top>
+      <AnchorPane prefHeight="725.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="217.0" layoutY="49.0" text="How was the Delivery?">
+               <font>
+                  <Font name="Sylfaen" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="217.0" layoutY="274.0" text="How was the food?">
+               <font>
+                  <Font name="Sylfaen" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="141.0" layoutY="550.0" text="For issues about your order please contact us on: foodhub@gmail.com or on our call center  +0724500678 " />
+            <TextArea layoutX="217.0" layoutY="81.0" prefHeight="171.0" prefWidth="417.0" />
+            <TextArea fx:id="reviewRestaurant" layoutX="217.0" layoutY="306.0" prefHeight="171.0" prefWidth="417.0" />
+            <Rating fx:id="ratingLivrator" layoutX="455.0" layoutY="44.0" prefWidth="170.0" updateOnHover="true" />
+            <Rating fx:id="ratingRestaurant" layoutX="455.0" layoutY="269.0" prefWidth="170.0" updateOnHover="true" />
+         </children></AnchorPane>
+   </top>
+   <bottom>
+       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <children>
+               <Pane layoutX="277.0" layoutY="111.0" prefHeight="106.0" prefWidth="290.0" style="-fx-background-color: #000000;">
+                   <children>
+                       <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToHistory" prefHeight="108.0" prefWidth="277.0" stylesheets="@Images/menu.css" text="COMENZI" textFill="WHITE">
+                           <font>
+                               <Font size="25.0" />
+                           </font>
+                       </Button>
+                       <FontAwesomeIcon fill="#fffdfd" glyphName="BOOK" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                   </children>
+               </Pane>
+               <Pane layoutX="567.0" layoutY="111.0" prefHeight="106.0" prefWidth="283.0" style="-fx-background-color: #000000;">
+                   <children>
+                       <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="108.0" prefWidth="283.0" stylesheets="@Images/menu.css" text="PROFILE" textFill="WHITE">
+                           <font>
+                               <Font size="25.0" />
+                           </font>
+                       </Button>
+                       <FontAwesomeIcon fill="#fffdfd" glyphName="USER" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                   </children>
+               </Pane>
+               <Pane layoutY="111.0" prefHeight="106.0" prefWidth="283.0" style="-fx-background-color: #000000;">
+                   <children>
+                       <Button alignment="BOTTOM_CENTER" layoutX="-1.0" mnemonicParsing="false" onAction="#goToOrder" prefHeight="108.0" prefWidth="277.0" stylesheets="@Images/menu.css" text="ORDER" textFill="WHITE">
+                           <font>
+                               <Font size="25.0" />
+                           </font>
+                       </Button>
+                       <FontAwesomeIcon fill="#fffdfd" glyphName="HOME" layoutX="120.0" layoutY="56.0" size="3.5em" />
+                   </children>
+               </Pane>
+            <Button layoutX="386.0" layoutY="-2.0" mnemonicParsing="false" onAction="#sendReview" prefWidth="80.0" stylesheets="@Images/buttonStyle.css" text="Submit">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+           </children>
+       </AnchorPane>
+   </bottom>
+</BorderPane>
